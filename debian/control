@@ -1,0 +1,14 @@
+Source: pd-mapper
+Section: pocophone
+Priority: optional
+Maintainer: Ivan J. <parazyd@dyne.org>
+Build-Depends: debhelper-compat (= 12), libqrtr-dev
+Standards-Version: 4.3.0
+Homepage: https://github.com/andersson/pd-mapper
+Vcs-Git: https://github.com/maemo-leste/pd-mapper
+Vcs-Browser: https://github.com/maemo-leste/pd-mapper
+
+Package: pd-mapper
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qualcomm PD mapper

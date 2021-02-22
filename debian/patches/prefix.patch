@@ -1,0 +1,26 @@
+diff --git a/Makefile b/Makefile
+index 908dbfd..7a5facb 100644
+--- a/Makefile
++++ b/Makefile
+@@ -3,7 +3,7 @@ PD_MAPPER := pd-mapper
+ CFLAGS := -Wall -g -O2
+ LDFLAGS := -lqrtr
+ 
+-prefix ?= /usr/local
++prefix ?= /usr
+ bindir := $(prefix)/bin
+ servicedir := $(prefix)/lib/systemd/system
+ 
+diff --git a/servreg_loc.h b/servreg_loc.h
+index 2ac5faa..56e6c03 100644
+--- a/servreg_loc.h
++++ b/servreg_loc.h
+@@ -4,7 +4,7 @@
+ #include <stdint.h>
+ #include <stdbool.h>
+ 
+-#include "libqrtr.h"
++#include <libqrtr.h>
+ 
+ #define SERVREG_QMI_SERVICE 64
+ #define SERVREG_QMI_VERSION 257

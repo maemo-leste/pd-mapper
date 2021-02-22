@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#DEBHELPER#
+
+rc-update del pd-mapper default || true
+rc-update add pd-mapper sysinit || true
+
+exit 0
